@@ -1,0 +1,28 @@
+#+TITLE: prettier layer
+
+* Table of Contents                                       :TOC_4_gh:noexport:
+- [[#description][Description]]
+- [[#install][Install]]
+- [[#key-bindings][Key Bindings]]
+
+* Description
+This layer adds support for [[https://github.com/prettier/prettier][prettier]].
+
+* Install
+To use this configuration layer, add it to your =~/.spacemacs=. You will need to
+add =prettier-js= to the existing =dotspacemacs-configuration-layers= list in
+this file.
+
+To install =prettier= globally:
+#+BEGIN_SRC sh
+  $ npm install -g prettier 
+#+END_SRC
+
+You can also specify a version of prettier in your package.json file. 
+Follow instructions on the install page [https://prettier.io/docs/en/install.html](install).
+
+* Key Bindings
+
+| Key Binding | Description                       |
+|-------------+-----------------------------------|
+| ~SPC m =~   | beautify code in supported layers |
